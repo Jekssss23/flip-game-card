@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Flip Card</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Game Flip Card</h1>
+
+      <div class="game-info">
+        <div class="score">Skor: <span id="score">0</span></div>
+        <div class="moves">Gerakan: <span id="moves">0</span></div>
+      </div>
+
+      <div class="game-board" id="game-board">
+        <!-- Kartu akan di-generate oleh JavaScript -->
+      </div>
+
+      <div class="controls">
+        <button id="reset-btn">Mulai Ulang</button>
+      </div>
+    </div>
+
+    <div class="win-message" id="win-message">
+      <div class="win-content">
+        <h2>Selamat! Anda Menang!</h2>
+        <p>Skor akhir: <span id="final-score">0</span></p>
+        <p>Jumlah gerakan: <span id="final-moves">0</span></p>
+        <button id="play-again">Main Lagi</button>
+      </div>
+    </div>
+
+    <!-- Audio untuk efek suara umum -->
+    <audio
+      id="match-sound"
+      src="/public/sounds/Matching.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="win-sound"
+      src="/public/sounds/Winner.mp3"
+      preload="auto"
+    ></audio>
+
+    <!-- Audio untuk setiap buah -->
+    <audio
+      id="apel-sound"
+      src="/public/sounds/Apple.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="pisang-sound"
+      src="/public/sounds/Banana.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="jeruk-sound"
+      src="/public/sounds/Orange.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="anggur-sound"
+      src="/public/sounds/Wine.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="semangka-sound"
+      src="/public/sounds/Watermelon.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="stroberi-sound"
+      src="/public/sounds/Strawberry .mp3"
+      preload="auto"
+    ></audio>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
